@@ -1,3 +1,4 @@
+//Lecture 10, start ehre after reviewing the files
 package com.jobreadyprogrammer.spark;
 
 import static org.apache.spark.sql.functions.concat;
@@ -12,21 +13,21 @@ public class Application {
 
 	public static void main(String[] args) {
 		
-		SparkSession spark = SparkSession.builder()
+		SparkSession spark = SparkSession.builder() //create spark session
 		        .appName("Combine 2 Datasets")
 		        .master("local")
 		        .getOrCreate();
 		 
-		    Dataset<Row> durhamDf = buildDurhamParksDataFrame(spark);
+		    Dataset<Row> durhamDf = buildDurhamParksDataFrame(spark); //firs method parses data for durham parks. THis builds a dataframe.
 //		    durhamDf.printSchema();
 //		    durhamDf.show(10);
 		    
-		    Dataset<Row> philDf = buildPhilParksDataFrame(spark);
+		    Dataset<Row> philDf = buildPhilParksDataFrame(spark); //now this one builds a dataframe for philly.
 //		    philDf.printSchema();
 //		    philDf.show(10);
 
 		    
-		    combineDataframes(durhamDf, philDf);
+		    combineDataframes(durhamDf, philDf); //combine them.
 		    
 	}
 

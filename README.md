@@ -8,6 +8,10 @@ https://cglearning.udemy.com/course/apache-spark-for-java-developers/learn/lectu
 - Maven 3
 - Eclipse IDE
 
+### Reading the files
+`learningspark` first java spark project example
+`sparkwithjava` all the projects we will go through in the course
+
 ### Get Started
 
 First create a folder for this course. I did the following:<br>
