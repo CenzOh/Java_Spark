@@ -1,4 +1,5 @@
 //#Typing this version up myself and my own comment.s
+// LECTURE 6
 //LESSON 6 First Spark APp
 package com.jobreadyprogrammer.spark;
 

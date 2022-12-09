@@ -1,6 +1,6 @@
-### Project 3 Lecture 9 and 10
+# Project 3 Lecture 9, 10, 11
 
-Lecture 9, reduce log entries inthe console.
+### Lecture 9, reduce log entries inthe console.
 Good idea to follow the log entries at beginning of learning. If it becomes too much, disable it with the following:
 Imports:
 ```
@@ -42,3 +42,12 @@ Geo shape filed contains coordinates of various points in the park. This is one 
 Next up, Philly one is a CSV. Can look at in excel. Col names are super differnt than the Durham file. 
 This is Philly recreations, each record is not necessarily a park. THe ones that are literally say park.
 We will be filtering for records that only contain parks. Combine this with the JSON document. 
+
+### HOW TO READ files
+`src/main/java/com.jobreadyprogrammer.spark` where all these driver files are located.<br>
+`application.java` this file was given to me with all code written. Theres so much to cover that I created a second file just for comments like in project1<br>
+`application2.java` this is the java file where I code the solution myself / follow tutorial and provide my comments and outptu<br>
+`applicationTest.java` didnt get up to it yet WIP<br>
+`src/main/resources` location of our files that we will be reading<br>
+`durham-parks.json` JSON file that has parks within Durham North Carolina<br>
+`philadelphia_recreations.csv` similarly, CSV file of parks in Philadelphia Pennsylvania <br>
