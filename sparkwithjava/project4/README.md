@@ -1,4 +1,4 @@
-# Project 4 Lessons 12 - 13
+# Project 4 Lessons 12 - 14
 
 ### Quick Troubleshoot
 Again, please refer to outer most `README.md` for extra help. When creating new project named proejct 4 I ran into errors. I fixed this by doing Import Maven project and selecting project 4.<br>
@@ -32,4 +32,12 @@ Ultimate goal - convert user defined DSs BACK to DFs for running various ops. We
 Now hop into `project 4`. Look at `Application.java` first under `com.jobreadyprogrammer.spark`<br>
 
 ### Lecture 13 Map Reduce Transformation Functions
-Looking
+Looking at `ArrayToDataset.java` still. We will talk about `map()` function. This fcn takes one element and produces an output of one element.<br>
+Input A -> Map() -> Output 1<br>
+Ex - map alphabets from A-z to number representation, we have a fcn that inputs letter and outputs the number.<br>
+Howeverm the `reduce()` fcn is a bit differnt. It takes multiple inputs and produces one output.<br>
+Inputs 2, 2, 2, 2 ----> reduce() --> output 8.<br>
+Ex - ten items going into the reduce, outputs one item. <br>
+Fundamental fcns from hadoop and in spark. Occurs under the hood / behind the scenes. Pretty simple stuff.<br>
+Normally, in advancements of API of spark we dont have to think of it at that granualr of a level but still important to understand the concepts.<br>
+Now lets hop into `ArrayToDataset.java`.
