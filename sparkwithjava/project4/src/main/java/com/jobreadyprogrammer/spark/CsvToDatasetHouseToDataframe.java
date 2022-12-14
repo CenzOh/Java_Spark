@@ -1,3 +1,4 @@
+//lecture 14, instructer version
 package com.jobreadyprogrammer.spark;
 
 import org.apache.spark.sql.Dataset;
@@ -29,8 +30,8 @@ public class CsvToDatasetHouseToDataframe {
 		        .load(filename);
 		    
 		    System.out.println("House ingested in a dataframe: ");
-//		    df.show(5);
-//		    df.printSchema();
+		    df.show(5);
+		    df.printSchema();
 		
 		    Dataset<House> houseDS = df.map(new HouseMapper(), Encoders.bean(House.class));
 		    
